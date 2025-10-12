@@ -1,1 +1,1 @@
-this folder contains Master core concepts (Videos 31-41)
+this folder contains Advanced topics and projects (Videos 31-41)
