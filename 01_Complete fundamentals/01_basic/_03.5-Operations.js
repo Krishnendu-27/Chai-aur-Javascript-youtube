@@ -131,8 +131,16 @@ console.log(g instanceof Array); // true
 
 // - Arithmetic: Use +, -, *, /, %, **
 // - Comparisons: Use == for value, === for type + value
-// - Assignments: +=, -=, *=, etc. for shorthand
+// - Logical: +=, -=, *=, etc. for shorthand
 // - Logical: &&, ||, !, and double negation (!!) to test truthy/falsy
 // - Unary: + to convert string to number, ++/-- for increments
 // - Ternary: condition ? true : false
 // - Type checking: typeof (primitive), instanceof (objects)
+
+// video summary 
+// there 6 type of operation Arithmetic , Logical , Logical , Unary , Ternary . we can concatinate string via + when we use string + number concatinate its convert the number tto string then add 
+// console.log(1 + '2'); // 12
+// console.log(1 + '2' + 1); // 121
+// console.log(1 + 2 + '1'); // 31
+// when js convertion done please check properly in real life redable code is first proprity but in - its gets diffrent bacuse when + there a choice bettween concatinate and addition but in use of - it alwsys subtract
+// prefix and postfix is needed to learn
