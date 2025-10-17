@@ -135,19 +135,143 @@ function doTask(url, callback) {
     });
 }
 doTask(`https://randomuser.me/api/`, function (res) {
-  console.log(`you name is ${res.results[0].name.first} your email is ${res.results[0].email} and your gender i guess! ${res.results[0].gender}`);
+  console.log(
+    `you name is ${res.results[0].name.first} your email is ${res.results[0].email} and your gender i guess! ${res.results[0].gender}`
+  );
 });
 
 // Aynce/ Await
 
 // Async/Await – Create any function and write whatever async code you want inside it. Now, when you write async, the line after it executes first because async goes to the side stack, and if the later line depends on the async one, your code will fail. That’s why, because your code depends on the async code which will run after the sync code finishes.
 
+// await neeed a conditon await parenet function need to write async
 
+// example
+async function abcde() {
+  let data = await fetch(`https://randomuser.me/api/`);
+  data = await data.json();
+  // You're trying to log an object (data) using a template literal (${data}), which implicitly calls toString() on the object. For most objects, this results in the string: that why this not work ⬇️
+  // console.log(`data is ${data}`);
+  console.log(data);
+}
+abcde();
 // with aynce await we can write asynce code that way its looks like syncronass
 
 // Event Loop
+
+// who chekc queess and main stack continuesly which he chcek that is main stack empty or not if yes then transfer quess to main stack one by one
+
 // Callback vs promises vs asynce await
+
+// get a data from url and show in log
+// callback
+function callabckexample(url, callabck) {
+  fetch(url)
+    .then(function (raw) {
+      return raw.json();
+    })
+    .then(function (result) {
+      callabck(result);
+    });
+}
+callabckexample(`https://randomuser.me/api/`, function (d) {
+  console.log(
+    `full name is ${d.results[0].name.first} ${d.results[0].name.last} for callback`
+  );
+});
+
+// promises
+
+let promiseexample = new Promise(function (resolve, reject) {
+  axios(`https://randomuser.me/api/`).then(function (res) {
+    // here data is the format that axois send the data
+    if (res.data.results[0].dob.age > 0) {
+      resolve(res.data);
+    } else {
+      reject(res.data);
+    }
+  });
+});
+
+promiseexample
+  .then(function (d) {
+    console.log(
+      `full name is ${d.results[0].name.first} ${d.results[0].name.last} for promises`
+    );
+  })
+  .catch(function (e) {
+    console.log("age is " + e.results[0].age);
+  });
+
+// asynce await
+async function asyncexample() {
+  let d = await fetch(`https://randomuser.me/api/`);
+  d = await d.json();
+
+  console.log(
+    `full name is ${d.results[0].name.first} ${d.results[0].name.last} for async await`
+  );
+}
+asyncexample();
+// which is best 
+/* 
+// Callback vs promises vs asynce await
+
+// get a data from url and show in log
+// callback
+function callabckexample(url, callabck) {
+  fetch(url)
+    .then(function (raw) {
+      return raw.json();
+    })
+    .then(function (result) {
+      callabck(result);
+    });
+}
+callabckexample(`https://randomuser.me/api/`, function (d) {
+  console.log(
+    `full name is ${d.results[0].name.first} ${d.results[0].name.last} for callback`
+  );
+});
+
+// promises
+
+let promiseexample = new Promise(function (resolve, reject) {
+  axios(`https://randomuser.me/api/`).then(function (res) {
+    // here data is the format that axois send the data
+    if (res.data.results[0].dob.age > 0) {
+      resolve(res.data);
+    } else {
+      reject(res.data);
+    }
+  });
+});
+
+promiseexample
+  .then(function (d) {
+    console.log(
+      `full name is ${d.results[0].name.first} ${d.results[0].name.last} for promises`
+    );
+  })
+  .catch(function (e) {
+    console.log("age is " + e.results[0].age);
+  });
+
+// asynce await
+async function asyncexample() {
+  let d = await fetch(`https://randomuser.me/api/`);
+  d = await d.json();
+
+  console.log(
+    `full name is ${d.results[0].name.first} ${d.results[0].name.last} for async await`
+  );
+}
+asyncexample();
+*/
+
 // genarators
-// error handeling in aynce
+// its give us to power to pause the flow of a code 
+
+// error handeling in async
 // web workores
 // AJAX
