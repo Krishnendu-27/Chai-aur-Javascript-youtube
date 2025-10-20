@@ -91,3 +91,7 @@ console.log(Math.floor(Math.random() * (max - min + 1) + min));
 // • BigInt supports integers beyond safe limits and local formatting.
 // • Math library provides constants and functions for common operations.
 // • Random range generation requires scaling and shifting formulas.
+// video summary
+/*
+This JavaScript guide explains number handling, comparing primitive numbers and Number objects. It demonstrates formatting with toFixed() and toPrecision(), and shows how BigInt handles large integers with locale formatting. Safe integer limits are shown using Number.MAX_SAFE_INTEGER and MIN_SAFE_INTEGER. The Math library provides constants and functions like abs(), round(), floor(), and random() for common operations and random number generation across specific ranges using scaling techniques.
+*/
