@@ -2,7 +2,7 @@
 
 ## 🚀 Overview
 
-These notes cover the essentials: where JavaScript runs today (Node, Deno, V8), how JS is parsed/compiled, basic I/O, variable kinds (`var` / `let` / `const`), data types (primitive vs reference), type coercion, truthy/falsy rules, common operators, and a lot of small examples with **sample input → output** to make things concrete. I kept the tone casual and corrected spelling/grammar where needed.
+These notes cover the essentials: where JavaScript runs today (Node, Deno, V8), how JS is parsed/compiled, basic I/O, variable kinds (`var` / `let` / `const`), data types (primitive vs reference), type coercion, truthy/falsy rules, common operators, and a lot of small examples with **sample input → output** to make things concrete.
 Clean, practical notes about how JavaScript stores values (stack vs heap), when primitives get promoted to the heap, string/number/date utilities, and common pitfalls. Corrected grammar & spelling, kept the same casual voice. Each example includes a short explanation and a simple sample input → output where relevant.
 
 ---
