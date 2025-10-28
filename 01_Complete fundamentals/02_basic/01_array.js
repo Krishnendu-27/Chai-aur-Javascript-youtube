@@ -1,5 +1,5 @@
 // ----------------------------------------------
-// Array Operations in JavaScript – Clear and Engaging
+// Array Operations in JavaScript 
 // ----------------------------------------------
 // Demonstrates array creation, manipulation methods, shallow vs deep copies,
 // and the important difference between slice() and splice().

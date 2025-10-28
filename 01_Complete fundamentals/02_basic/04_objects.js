@@ -59,11 +59,19 @@ console.log(class1.student2.name.lastname);
 // ---------------------------------------------------
 let user4 = Object.assign({}, user3, user2);
 // {} ensures result is in target format, others are source objects
-console.log(user4);
+console.log("user4 output:", user4);
+
 
 // Alternative with spread operator
 let user5 = { ...user3, ...user2 };
 console.log(user5);
+// {...obj} copies properties into a new object.
+
+// Order matters: later spreads overwrite earlier keys.
+
+// Doesn’t deeply merge nested objects.
+
+// Cleaner, shorter alternative to Object.assign().
 
 // ---------------------------------------------------
 // 4. Working with API Data Arrays
