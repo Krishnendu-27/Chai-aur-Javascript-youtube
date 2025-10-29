@@ -18,6 +18,7 @@ let user3 = {
   name: "India",
   form: "asia",
   famous: "culture",
+  capital: "delhi"
 };
 
 console.log(user2);
