@@ -34,10 +34,12 @@ function regularFunction() {
 let arrowFunction = () => {
   console.log(this); // same 'this' as enclosing scope
 };
-
+arrowFunction();
 // ---------------------------------------------------
 // 4. Arrow Function Syntax Variations
 // ---------------------------------------------------
+// explicit use {} and also use return madetory
+//  and implicit dont use {}  and also dont need to use return mandetory
 let fun1 = () => {
   return "hello"; // explicit return required with {}
 };
