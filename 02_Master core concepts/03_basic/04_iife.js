@@ -1,10 +1,10 @@
 // imeditaeely invoked function expresion (IIFE)
 
 function halo() {
-  console.log("halo world");
+  console.log("halo world1");
 }
 (function halo() {
-  console.log("halo world");
+  console.log("halo world2");
 })();
 ((name) => {
   console.log(`halo world ${name}`);
