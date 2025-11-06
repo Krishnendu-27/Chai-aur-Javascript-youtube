@@ -39,7 +39,7 @@ The course is part of the **Chai aur Code** YouTube channel by Hitesh Choudhary.
 - [X] JS Code Execution + Call Stack  
 - [X] Control Flow in One Shot  
 - [X] `for` Loop with Break & Continue  
-- [ ] `while` and `do while` Loops  
+- [X] `while` and `do while` Loops  
 - [ ] High Order Array Loops  
 - [ ] `filter`, `map`, and `reduce`  
 - [ ] DOM Introduction  
