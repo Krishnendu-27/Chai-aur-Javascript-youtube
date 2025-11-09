@@ -22,7 +22,7 @@ const names = ["kai", "luffy", "zoro"];
 const upper = names.map(name => name.toUpperCase());
 console.log(upper); // ["KAI", "LUFFY", "ZORO"]
 
-// Example: Extract prices from product objects
+// Example: Extract prices from  product objects
 const products = [
   { item: "Book", price: 200 },
   { item: "Pen", price: 50 },
