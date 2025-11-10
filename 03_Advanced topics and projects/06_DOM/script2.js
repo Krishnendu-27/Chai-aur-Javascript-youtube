@@ -155,3 +155,7 @@ let cachedElement = document.querySelector(".frequently-used");
 // • Convert HTMLCollection/NodeList to arrays with Array.from() for full array methods.
 // • getElementById is fastest; querySelector is most flexible for selection.
 // • Cache frequently accessed elements to improve performance.
+/*
+ * lecture 32 summery 
+ *This script demonstrates DOM manipulation in JavaScript: selecting elements using IDs, classes, and query selectors; getting and setting attributes; changing styles directly; and accessing content via textContent, innerText, and innerHTML. It covers HTMLCollection vs NodeList, converting them to arrays, bulk styling, dynamic content updates, class toggling, and best practices for performance and caching frequently used elements.
+ */
