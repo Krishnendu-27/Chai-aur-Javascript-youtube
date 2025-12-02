@@ -40,15 +40,15 @@ The course is part of the **Chai aur Code** YouTube channel by Hitesh Choudhary.
 - [X] Control Flow in One Shot  
 - [X] `for` Loop with Break & Continue  
 - [X] `while` and `do while` Loops  
-- [ ] High Order Array Loops  
-- [ ] `filter`, `map`, and `reduce`  
-- [ ] DOM Introduction  
-- [ ] DOM Selectors, NodeList, HTMLCollection  
-- [ ] Creating Elements in the DOM  
+- [X] High Order Array Loops  
+- [X] `filter`, `map`, and `reduce`  
+- [X] DOM Introduction  
+- [X] DOM Selectors, NodeList, HTMLCollection  
+- [X] Creating Elements in the DOM  
 - [ ] Editing & Removing Elements in DOM  
-- [ ] Build 4 JavaScript Projects for Beginners  
-- [ ] Events in JavaScript  
-- [ ] Async JavaScript Fundamentals  
+- [X] Build 4 JavaScript Projects for Beginners  
+- [X] Events in JavaScript  
+- [X] Async JavaScript Fundamentals  
 - [ ] 2 Projects with Async JS  
 - [ ] API Requests & V8 Engine  
 - [ ] Promises in JavaScript  

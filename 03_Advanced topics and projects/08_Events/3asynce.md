@@ -1,4 +1,3 @@
-
 ## 📅 Thursday, October 16, 2025, 3:31 PM IST
 
 # 🔄 JavaScript Asynchronous Behavior
